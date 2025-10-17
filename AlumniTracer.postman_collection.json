@@ -1,0 +1,79 @@
+{
+  "info": {
+    "name": "AlumniTracer API Test",
+    "_postman_id": "c1f4d9b8-3b27-4af1-b6b8-71d3e66e8b21",
+    "description": "Koleksi Postman untuk mengetes API alumni-tracer",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Login Admin",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"email\": \"admin@mail.com\",\n  \"password\": \"admin123\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/login",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["login"]
+        }
+      }
+    },
+    {
+      "name": "Get Semua Alumni",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token}}"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:3000/api/alumni",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "alumni"]
+        }
+      }
+    },
+    {
+      "name": "Tambah Alumni (Admin)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token}}"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nim\": \"A003\",\n  \"nama\": \"Rudi Hartono\",\n  \"jurusan\": \"Manajemen\",\n  \"angkatan\": 2020,\n  \"tahun_lulus\": 2024,\n  \"email\": \"rudi@mail.com\",\n  \"no_telepon\": \"081212341234\",\n  \"alamat\": \"Jl. Kenanga No.45\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/admin/alumni",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "admin", "alumni"]
+        }
+      }
+    }
+  ]
+}
