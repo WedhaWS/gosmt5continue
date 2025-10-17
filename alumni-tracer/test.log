@@ -1,0 +1,14 @@
+2025/10/08 09:08:02.920661 serviceUser.go:79: [Info] 127.0.0.1 user15Has Login
+2025/10/08 09:08:32.974448 serviceUser.go:79: [Info] 127.0.0.1 user15 Has Login
+2025/10/08 10:48:42.509931 serviceUser.go:79: [Info] 127.0.0.1 user15 Has Login
+2025/10/08 10:49:05.322943 main.go:17: [Fatal] exit status 2
+2025/10/08 11:08:10.041866 main.go:17: [Fatal] exit status 2
+2025/10/08 11:10:37.989472 main.go:17: [Fatal] exit status 2
+2025/10/08 11:14:43.021433 main.go:17: [Fatal] exit status 2
+2025/10/08 11:20:59.356903 main.go:17: [Fatal] exit status 2
+2025/10/08 12:34:34.066825 prefork.go:81: [Error] prefork: failed to kill child: invalid argument
+2025/10/08 12:34:34.068997 main.go:17: [Fatal] exit status 2
+2025/10/08 13:00:42.584957 prefork.go:81: [Error] prefork: failed to kill child: invalid argument
+2025/10/08 13:00:42.586483 prefork.go:81: [Error] prefork: failed to kill child: invalid argument
+2025/10/08 13:00:42.587586 prefork.go:81: [Error] prefork: failed to kill child: invalid argument
+2025/10/08 13:00:42.587586 main.go:17: [Fatal] exit status 0xc000013a
